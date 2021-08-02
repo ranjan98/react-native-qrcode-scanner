@@ -25,7 +25,6 @@ export default function QRScannedScreen({ route, navigation }) {
   };
 
   return (
-    // <ScrollView style={{ padding: 10 }}>
       <View style={styles.main}>
         <View style={styles.container}>
           <Card text={params.data} />
@@ -34,7 +33,6 @@ export default function QRScannedScreen({ route, navigation }) {
          <Text style={styles.textStyle}>Share</Text>
         </TouchableHighlight>
       </View>
-    // </ScrollView>
   );
 }
 

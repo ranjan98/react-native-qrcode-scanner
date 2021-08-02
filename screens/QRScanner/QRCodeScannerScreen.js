@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
 export default function QRCodeScannerScreen({ navigation }) {
@@ -13,12 +13,8 @@ export default function QRCodeScannerScreen({ navigation }) {
         })();
     }, []);
 
-    let qrscanned = '';
     const handleBarCodeScanned = ({ type, data }) => {
-        qrscanned = data;
         setScanned(true);
-        // alert(`Bar code with type ${type} and data ${data} has been scanned!`);
-        // alert(`${data}`);
         navigation.navigate('QRScanned', { data: data });
     };
 
