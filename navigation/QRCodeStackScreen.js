@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-
 import QRCodeScannerScreen from '../screens/QRScanner/QRCodeScannerScreen';
 import QRScannedScreen from '../screens/QRScanner/QRScannedScreen';
 
